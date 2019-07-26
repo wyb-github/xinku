@@ -1,0 +1,303 @@
+@import url('base.css');
+.adv-wrapper{
+    width:100%;
+    height:40px;
+    background-color:#444;
+}
+.adv-wrapper-text{
+    width:976px;
+    height:40px;
+    margin:auto;
+    line-height:40px;
+    font-size:12px;
+    color:#a8a8aa;
+    text-align:right;
+}
+
+.nav{
+    width:100%;
+    height:44px;
+    background-color:rgba(45,45,45,0.98);
+}
+.nav-gn-list{
+    width:1000px;
+    height:44px;
+    margin:auto;
+    line-height:44px;
+    display:flex;
+    justify-content:space-between;
+}
+.nav-gn-list a{
+    color:white;
+}
+.nav-gn-list2{
+    width:90%;
+    height:44px;
+    margin:auto;
+    line-height:44px;
+    display:flex;
+    justify-content:space-between;
+    display:none;
+}
+.nav-gn-list2 a{
+    color:white;
+}
+@media screen and (max-width:900px){
+    .nav-gn-list{
+        display:none;
+    }
+    .nav-gn-list2{
+        display:flex;
+    }
+}
+.iphone-promo{
+    width:100%;
+    height:140px;
+    padding:51px 0;
+    background-color:#FAFAFA;
+}
+.iphone-promo h2{
+    width:910px;
+    color:rgb(17,17,17);
+    display:block;
+    font-size:32px;
+    margin:auto;
+    margin-bottom:6.4px;
+}
+.iphone-promo h3{
+    width:600px;
+    height:58px;
+    color:#111;
+    font-size:21px;
+    font-weight:400;
+    text-align:center;
+    margin:auto;
+}
+.cta-links{
+    width:250px;
+    height:29px;
+    margin:auto;
+    margin-top:11px;
+    text-align:center;
+
+}
+.cta-links a{
+    color:#0070C9;
+    margin:0 10px;
+    font-size:21px;
+}
+.iphone-xr{
+    width:100%;
+    height:490px;
+    padding:51px 0;
+    margin-top:10px;
+    background-color:#FAFAFA;
+}
+.iphone-xr h2{
+    width:180px;
+    color:rgb(17,17,17);
+    display:block;
+    font-size:32px;
+    margin:auto;
+    margin-bottom:6.4px;
+}
+.iphone-xr h3{
+    width:600px;
+    height:58px;
+    color:#111;
+    font-size:21px;
+    font-weight:400;
+    text-align:center;
+    margin:auto;
+}
+.shouji1-img{
+    width:700px;
+    height:360px;
+    margin:auto;
+}
+.shouji1-img img{
+    width:700px;
+    height:390px;
+
+}
+.liangge{
+    width:100%;
+    height:680px;
+    margin-top:10px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+}
+.mac-book{
+    width:830px;
+    height:580px;
+    padding:51px 0;
+    background-color:#FAFAFA;
+}
+.mac-book h2{
+    width:220px;
+    color:rgb(17,17,17);
+    display:block;
+    font-size:32px;
+    margin:auto;
+    margin-bottom:6.4px;
+}
+.mac-book h3{
+    width:200px;
+    height:28px;
+    color:#111;
+    font-size:21px;
+    font-weight:400;
+    text-align:center;
+    margin:auto;
+}
+.mac-links{
+    width:200px;
+    height:29px;
+    margin:auto;
+    margin-top:11px;
+    text-align:center;
+}
+.mac-links a{
+    color:#0070C9;
+    margin:0 10px;
+    font-size:17px;
+}
+.macbook-da-img{
+    width:742px;
+    heigth:400px;
+    margin:auto;
+}
+.macbook-da-img img{
+    width:742px;
+    heigth:400px;
+}
+.mac-book-img{
+    width:306px;
+    heigth:300px;
+    margin:auto;
+    display:none;
+}
+.mac-book-img img{
+    width:306px;
+    heigth:300px;
+    margin-top:30px;
+}
+section{
+    width:100%;
+    height:150px;
+    background:#f2f2f2;
+    margin-top:10px;
+}
+.lala{
+    width:980px;
+    height:100px;
+    border-bottom: 1px solid #d6d6d6;
+    color: #888;
+    padding: 17px 0 11px;
+    font-size:12px;
+    margin:auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:1100px){
+    .iphone-promo h2{
+        width:800px;
+        margin:auto;
+        font-size:28px;
+    }
+    .iphone-promo h3{
+        margin:auto;
+        font-size:19px;
+    }
+    .iphone-xr h2{
+        width:160px;
+        margin:auto;
+        font-size:28px;
+    }
+    .iphone-xr h3{
+        margin:auto;
+        font-size:19px;
+    }
+    .cta-links a{
+    margin:auto;
+        font-size:19px;
+    }
+
+}
+
+
+
+
+
+@media screen and (max-width:900px){
+    .adv-wrapper-text{
+        width:560px;
+    }
+}
+
+@media screen and (max-width:900px){
+        .iphone-promo h2{
+        width:600px;
+        text-align:center;
+        margin:auto;
+        font-size:28px;
+    }
+    .iphone-promo h3{
+        width:437px;
+        text-align:content;
+        margin:auto;
+        font-size:19px;
+    }
+    .iphone-xr h2{
+        width:150px;
+        text-align:center;
+        margin:auto;
+        font-size:28px;
+    }
+    .iphone-xr{
+        height:375px;
+    }
+    .iphone-xr h3{
+        width:520px;
+        text-align:content;
+        margin:auto;
+        font-size:19px;
+    }
+    .cta-links a{
+        margin:auto;
+        font-size:19px;
+    }
+    .shouji1-img img{
+    width:580px;
+    height:290px;
+    }
+    .mac-book{
+        height:440px;
+    }
+    .mac-book-img{
+    display:block;
+    }
+    .macbook-da-img{
+    display:none;
+    }
+
+}
+
+
+
+
+
+
+
+
