@@ -631,11 +631,21 @@
     width:1226px;
     height:460px;
 }
+.first{
+    z-index:10;
+    opacity:1!important;
+}
 .lunbotu{
     position:absolute;
     top:0;
     left:0;
     cursor:pointer;
+    z-index:5;
+    opacity:0;
+    transition:opacity 0.2s;
+}
+.lunbotu-dak{
+
 }
 .left-arrow{
     width:41px;
@@ -648,6 +658,7 @@
     margin-left:235px;
     padding-top:14px;
     color:#D2D4D2;
+    z-index:90;
     cursor:pointer;
 }
 .left-arrow:hover{
@@ -663,6 +674,7 @@
     bottom:0;
     margin:auto;
     margin-right:7px;
+    z-index:90;
     padding-top:14px;
     color:#D2D4D2;
     cursor:pointer;
@@ -678,11 +690,14 @@
     font-size:40px;
 }
 .four-dot{
-    width:400px;
+    width:130px;
     height:18px;
+    display:flex;
+    justify-content:space-between;
     position:absolute;
     bottom:25px;
     right:40px;
+    z-index:30;
 }
 .dot{
     width:6px;
@@ -691,17 +706,18 @@
     margin-right:13px;
     border-radius:50%;
     border:2px solid rgba(0,0,0,0.4);
-    float:right;
     cursor:pointer;
+    background-color:#8D8D8D;
 }
 .dot:hover{
-    background-color:#8D8D8D;
+    background-color:none;
 }
 .choose-left{
     width:234px;
     height:420px;
     background:rgba(0,0,0,0.6);
     padding:20px 0;
+    z-index:80;
     position:absolute;
     top:0;
     left:0;
@@ -1035,9 +1051,7 @@ height:44px;
     color:#333;
     line-height:58px;
     font-size:22px;
-    position:relative;
-    top:0;
-    right:0;
+
 }
 .jiadian-daohang-right{
     float:right;
@@ -1069,6 +1083,9 @@ height:44px;
     width:1226px;
     height:614px;
     margin:auto;
+    position:relative;
+    top:0;
+    right:0;
 }
 .xm-jinshui-shaodi{
     width:234px;
@@ -1108,9 +1125,9 @@ height:44px;
     height:614px;
     float:left;
     position:absolute;
-    top:58px;
+    top:0px;
     right:0;
-    display:none;
+
 }
 .jiadian-list-right-di{
     width:992px;

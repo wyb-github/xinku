@@ -501,7 +501,7 @@ header{
     width:100%;
     height:500px;
     border-top:2px solid #ff0036;
-    background-color:#E8E8E8;
+    transition:all 1s;
     position:relative;
     top:0;
     left:0;
@@ -509,7 +509,17 @@ header{
 .adverticement{
     width:1230px;
     height:522px;
-    margin:auto;
+    position:absolute;
+    top:0;
+    left:160px;
+    transition:opacity 1s;
+    z-index:0;
+    opacity: 0;
+}
+
+.active{
+    z-index:90;
+    opacity: 1;
 }
 .slider-nav{
     width:100%;
@@ -518,6 +528,7 @@ header{
     bottom:0;
     margin-bottom:40px;
     text-align:center;
+    z-index:100;
 }
 .selected{
     background: #000;
@@ -538,6 +549,7 @@ header{
     top:0;
     left:160px;
     background-color:rgba(0,0,0,.55);
+    z-index:100;
 }
 .classify{
     height:31.2px;
@@ -916,18 +928,21 @@ header{
     padding:0 20px;
     background-color:#F1F1F1;
 }
+.cons{
+    position:relative;
+}
 .grid-xia{
     width:462px;
     height:225px;
     position:relative;
-    top:0;
+    top:57px;
     left:0;
 }
 .right-detail{
     width:291px;
     height:87px;
     position:absolute;
-    top:153px;
+    top:100px;
     left:0;
     background:url("./img/sanjiao-kuang.png") no-repeat;
     background-color:rgba(0,0,0,0);
@@ -948,7 +963,10 @@ header{
     width:200px;
     height:200px;
     float:right;
-    margin:10px 30px 0 0;
+    margin:-10px 10px 0 0;
+    position:absolute;
+    top:15px;
+    right:10px;
 }
 .banner-xiao{
     width:232px;
@@ -1292,9 +1310,12 @@ footer{
     height:380px;
     position:fixed;
     top:300px;;
-    left:150px;
+    left:100px;
     display:flex;
     flex-wrap:wrap;
+    transform:scale(0,0);
+    transition:all .3s;
+    transform-origin:left bottom;
 }
 .ce-daohang{
     width:25px;
@@ -1304,6 +1325,7 @@ footer{
     padding:6px;
     font-size:12px;
     color:white;
+    cursor:pointer;
 }
 .dao{
     line-height:25px;
@@ -1314,12 +1336,52 @@ footer{
     font-size:25px;
     background:#ABABAB;
 }
+.topSearch{
+    width:100%;
+    height:50px;
+    background:#ff0036;
+    border:1px solid #ff0036;
+    position:fixed;
+    top:0;
+    left:0;
+    transform:scale(1,0);
+    transform-origin:top;
+    transition:all .3s;
+}
 
-
-
-
-
-
+.topJuzhong{
+    width:1230px;
+    height:50px;
+    margin:0 auto;
+    line-height:50px;
+}
+.topLogo{
+    width:300px;
+    height:50px;
+    float:left;
+    line-height:50px;
+}
+.topLogo img{
+    width:170px;
+    height:40px;
+    display:block;
+    margin-top:5px;
+}
+.topKuang{
+    width:900px;
+    height:50px;
+    float:left;
+    line-height:50px;
+    color:white;
+    font-size:18px;
+}
+.topKuang input{
+    width:600px;
+    height:20px;
+    padding:5px;
+    outline:none;
+    margin-right:19px;
+}
 
 
 
