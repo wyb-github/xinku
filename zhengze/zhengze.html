@@ -26,19 +26,19 @@
 
     
 
-    // let str4 = ` <div class="box">
-    //     <div class="son1">this is box</div>
-    //     <div class="son2">this is box</div>
-    //     <div class="son3">this is box</div>
-    //     <div class="son4">this is box</div>
-    //     <div class="son5">this is box</div>
-    // </div> `
+    let str4 = ` <div class="box">
+        <div class="son1">this is box</div>
+        <div class="son2">this is box</div>
+        <div class="son3">this is box</div>
+        <div class="son4">this is box</div>
+        <div class="son5">this is box</div>
+    </div> `
     
     
     // let a = /<[\w,",=,\s]+>\n<[\w,",=,\s]+>[\w,\s]+<[\w,",=,\s,\/]+>\n<[\w,",=,\s]+>[\w,\s]+<[\w,",=,\s,\/]+>\n(<[\w,",=,\s]+>([\w,\s]+)<[\w,",=,\s,\/]+>\n)<[\w,",=,\s]+>[\w,\s]+<[\w,",=,\s,\/]+>\n<[\w,",=,\s]+>[\w,\s]+<[\w,",=,\s,\/]+>\n<[\w,",=,\s,\/]+>/
 
-    // let re1 = /<[\w,\s,=,"]+>\n\s+<[\w,",=,\s,\d]+>[\w,\s]+<[\w,\/]+>/ 
-    // console.log(re1.exec(str4))
+    let re1 = /<[\w,\s,=,"]+>\n\s+<[\w,",=,\s,\d,3]+>[\w,\s]+<[\w,\/]+>/m 
+    console.log(re1.exec(str4))
     
 //     非负整数
 //     let arr = [1,0.2,"assdd",-1,1]

@@ -29,7 +29,6 @@ window.onload = function(){
         if(type == 0){
             //正向
             now += 1
-            console.log(now)
             if(now>ceils.length-1){
                 now = 0
             }
@@ -47,7 +46,6 @@ window.onload = function(){
         ceils[now].classList.add("first")
         dian.forEach(function(item,index){
             if(index==now){
-                console.log(index)
                 item.style.background = "none"
             }else{
                 item.style.background = "#8D8D8D"
