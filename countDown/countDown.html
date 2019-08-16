@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input type="datetime-local" name="future" id="setFuture">
+    <input type="button" value="倒计时" class="btn">
+    剩余
+    <span class="day">0</span>天
+    <span class="hours">0</span>小时
+    <span class="minutes">0</span>分
+    <span class="second">0</span>秒
+</body>
+<script>
+    let setFuture = document.querySelector("#setFuture")
+    let btn = document.querySelector(".btn")
+    let day = document.querySelector(".day")
+    let hours = document.querySelector(".hours")
+    let minutes = document.querySelector(".minutes")
+    let second = document.querySelector(".second")
+    let futureTime = ""
+    let flag = true
+    btn.onclick = function(){
+        //获取设置的时间
+        futureTime = new Date(setFuture.value)
+        if(futureTime && flag){
+            flag = false
+            //点击后只读
+            setFuture.setAttribute("readonly","readonly")
+            //倒计时开始
+            setInterval(update,1000)
+        }
+    }
+
+    function update () {
+        let nowTime = new Date()
+        let offset = Math.floor((futureTime.getTime()-nowTime.getTime())/1000)
+        //天数
+        let dayNum = Math.floor(offset/(60*60*24))
+        day.innerHTML = dayNum
+        //小时
+        let hoursNum = Math.floor(offset%(60*60*24)/(60*60))
+        hours.innerHTML = hoursNum
+        //分钟
+        let minutesNum = Math.floor(offset%(60*60*24)%(60*60)/60)
+        minutes.innerHTML = minutesNum
+        //秒
+        let secondNum = Math.floor(offset%(60*60*24)%(60*60)%60)
+        second.innerHTML = secondNum
+    }
+
+</script>
+</html>

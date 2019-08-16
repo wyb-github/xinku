@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // let arr = [
+    //     '842615663@qq.com',
+    //     'wetjih@163.com',
+    //     'we234tjih@163.cn',
+    //     'we234tjih@qq.cn',
+    //     'wqeotq345@yahoo.com.cn',
+    //     '842615663@qq',
+    //     '842615663qq.com',
+    //     '@qq.com'
+    // ]
+
+
+    // let re = /^\w+@(qq|163|yahoo)\.(com|cn)(\.cn)?$/g
+
+    
+
+    // let str4 = ` <div class="box">
+    //     <div class="son1">this is box</div>
+    //     <div class="son2">this is box</div>
+    //     <div class="son3">this is box</div>
+    //     <div class="son4">this is box</div>
+    //     <div class="son5">this is box</div>
+    // </div> `
+    
+    
+    // let a = /<[\w,",=,\s]+>\n<[\w,",=,\s]+>[\w,\s]+<[\w,",=,\s,\/]+>\n<[\w,",=,\s]+>[\w,\s]+<[\w,",=,\s,\/]+>\n(<[\w,",=,\s]+>([\w,\s]+)<[\w,",=,\s,\/]+>\n)<[\w,",=,\s]+>[\w,\s]+<[\w,",=,\s,\/]+>\n<[\w,",=,\s]+>[\w,\s]+<[\w,",=,\s,\/]+>\n<[\w,",=,\s,\/]+>/
+
+    // let re1 = /<[\w,\s,=,"]+>\n\s+<[\w,",=,\s,\d]+>[\w,\s]+<[\w,\/]+>/ 
+    // console.log(re1.exec(str4))
+    
+//     非负整数
+//     let arr = [1,0.2,"assdd",-1,1]
+//     let re1 = /^[0-9]\d*|0$/g
+//     for(let i=0;i<arr.length;i++){
+//         console.log(re1.exec(arr[i]))
+//     }
+    
+
+//     正整数
+//     let arr = [1,0.2,"assdd",-1,1]
+//     let re1 = /^[1-9]\d*|0$/g
+//     for(let i=0;i<arr.length;i++){
+//         console.log(re1.exec(arr[i]))
+//     }
+
+//     非正整数
+//     let arr = [1,0,"assdd",-4,1]
+//     let re1 = /^((-\d+)|(0+))$/
+//     for(let i=0;i<arr.length;i++){
+//         console.log(re1.exec(arr[i]))
+//     }
+
+//     负整数
+//     let arr = [1,0,"assdd",-4,1]
+//     let re1 = /^(-[1-9][0-9]*)$/
+//     for(let i=0;i<arr.length;i++){
+//         console.log(re1.exec(arr[i]))
+//     }
+
+//     整数
+//     let arr = [1,0,"assdd",-4,1]
+//     let re1 = /^(0|[1-9][0-9]*|-[1-9][0-9]*)$/
+//     for(let i=0;i<arr.length;i++){
+//         console.log(re1.exec(arr[i]))
+//     }
+
+//     非负浮点数
+//     let arr = [1,4.5,"assdd",-4,1]
+//     let re1 = /^\d+(\.\d+)?$/
+//     for(let i=0;i<arr.length;i++){
+//         console.log(re1.exec(arr[i]))
+//     }
+
+//     正浮点数
+//     let arr = [1,4.5,"assdd",-4,1]
+//     let re1 = /^(([0-9]+\.[0-9]*[1-9][0-9]*)|([0-9]*[1-9][0-9]*\.[0-9]+)|([0-9]*[1-9][0-9]*))$/
+//     for(let i=0;i<arr.length;i++){
+//         console.log(re1.exec(arr[i]))
+//     }
+
+//     非正浮点数 ：
+//     let arr = [1,4.5,"assdd",-4,1]
+//     let re1 = /^((-\d+(\.\d+)?)|(0+(\.0+)?))$/
+//     for(let i=0;i<arr.length;i++){
+//         console.log(re1.exec(arr[i]))
+//     }
+    
+
+//     负浮点数
+//     let arr = [1,-4.5,"assdd",-4,1]
+//     let re1 = /^(-(([0-9]+\.[0-9]*[1-9][0-9]*)|([0-9]*[1-9][0-9]*\.[0-9]+)|([0-9]*[1-9][0-9]*)))$/
+//     for(let i=0;i<arr.length;i++){
+//         console.log(re1.exec(arr[i]))
+//     }
+
+//     浮点数
+//     let arr = [1,-4.5,"assdd",-4,1]
+//     let re1 = /^(-?\d+)(\.\d+)?$/
+//     for(let i=0;i<arr.length;i++){
+//         console.log(re1.exec(arr[i]))
+//     }
+
+//     有数字、26个英文字母组成的字符串：
+//     let arr = "1,-4.5,assdd,-4,1"
+//     let re1 = /^[A-Za-z0-9]+$/
+//     for(let i=0;i<arr.length;i++){
+//         console.log(re1.exec(arr[i]))
+//     }
+
+// 1、长度为8-10的用户密码（以字母开头、数字、下划线）
+// let arr = "1,-4.5,assdd,-4,1"
+//     let re1 = /^[A-Za-z0-9]+$/
+//     for(let i=0;i<arr.length;i++){
+//         console.log(re1.exec(arr[i]))
+//     }
+
+
+
+
+
+//  2、验证输入只能是汉字 ：
+// let arr = ["我","你","youxi",4654531]
+// re=/^[\u4e00-\u9fa5]+$/
+// for(let a= 0;a<arr.length;a++){
+//     console.log(re.exec(arr[a]))
+// }
+//  3、电子邮箱验证：
+// let arr = [
+//     '842615663@qq.com',
+//     'wetjih@163.com',
+//     'we234tjih@163.cn',
+//     'we234tjih@qq.cn',
+//     'wqeotq345@yahoo.com.cn',
+//     '842615663@qq',
+//     '842615663qq.com',
+//     '@qq.com'
+// ]
+// re = /^\w+@(qq|163|yahoo)\.(cn|com)(\cn)?$/
+// arr.forEach((item)=>{
+//     console.log(re.exec(item))
+// })
+//  4、URL地址验证：
+// let arr = ['http://soso.huitu.com/search/sdfaag.html?kw=鬼节',"https://www.baidu.com/s?ie=utf-8&f=8&rsv"]
+// let re = /(http:\/\/|https:\/\/)([\w,.]+)\/([\w,\/,\.]*)\?([\w,=,\u4e00-\u9fa5,&]*)/
+// console.log(re.exec(arr))
+//  5、电话号码的验证：
+// let arr1 = ['45342341234',"15726543456",'a1251566234','136121348590',"537345313","17634789535"]
+// re = /^(136|157|176)\d{8}$/
+// arr1.forEach((item)=>{
+//     console.log(re.exec(item))
+// })
+//  6、简单的身份证号验证：
+// let arr= [151234564789465134,181321321485465412,123456789123456789,"12345678912345678x"]
+// re = /^\d{17-18}|\d{15}|(X|x)?$/
+// // re = /^\d({18}|{17}(X|x)|{15})$/
+// arr.forEach((item)=>{
+//     console.log(re.exec(item))
+// })
+// 1、提取并捕获html标签内容：
+// let str4 = ` <div class="box">
+//     <div class="son1">this is box</div>
+//     <div class="son2">this is box</div>
+//     <div class="son3">this is box</div>
+//     <div class="son4">this is box</div>
+//     <div class="son5">this is box</div>
+// </div>    `
+// re = /<[\w,\s,",',=]+>\n\s+<[\w,\s,",',=]+>([\w,\s]+)<[\/,\w]+>\n\s+<[\w,\s,",',=]+>([\w,\s]+)<[\/,\w]+>\n\s+<[\w,\s,",',=]+>([\w,\s]+)/
+
+//     console.log(re.exec(str4))
+
+
+
+</script>
+</html>

@@ -69,10 +69,12 @@ window.onload = function ( ) {
                 while (this.isOverlap(left)){
                     left = Math.random() * 4;
                 }
-                div.setAttribute("style", `background: url("img/A_Z/${letter}.png");top:0rem;left:${left}rem;`)
+                let top = 0;
+                div.setAttribute("style", `background: url("img/A_Z/${letter}.png");top:${top}rem;left:${left}rem;`)
                 this.screen.appendChild(div);
                 let obj ={}
                 obj['title']=letter
+                obj['top']=top;
                 obj['left']=left
                 obj['node']=div;
                 this.letters.unshift(obj);
@@ -106,7 +108,7 @@ window.onload = function ( ) {
             }
         }
         run(){
-            this.t = setInterval(()=> {
+            this.t = setInterval(()=> {     //保存自的属性
                 this.letters.forEach((item,index)=>{
                     item.top+=0.1;
                     item.node.style.top = item.top+'rem';
@@ -138,3 +140,4 @@ window.onload = function ( ) {
 
 
 }
+
